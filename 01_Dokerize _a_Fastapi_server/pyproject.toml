@@ -1,0 +1,24 @@
+[project]
+name = "fastapi-starter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Tanish-Sarkar", email = "tanishnitch@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "httpx"
+]
+
+[dependency-groups]
+dev = [ "pytest" ]
+
+[project.scripts]
+01-dokerize-a-fastapi-server = "01_dokerize_a_fastapi_server:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
